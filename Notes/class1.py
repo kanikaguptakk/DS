@@ -89,6 +89,47 @@ type(g)
 print(g)
 print(len(g))
 
-# To acces the items for a set-
+# To acces the items -
 for x in g:
     print(x)
+K={"girl", "boy", 44, 5j, True, "Men", "Women"}    
+print("girl" in K)
+print("man" in K)
+T=("girl", "boy", 44, 5j, True, "Men", "Women")    
+print("men" in T)
+print("Men" in T)
+# T.add("hen")
+# print(T)  # Tuple is ordered same with List 
+K.add("hen")
+print(K)   # Set is unordered
+
+# Update function-to merge 2 sets
+G={"girl", "fan", 44, 5j, True, "Men", "Women"}
+H={False, 44j}
+G.update(H)
+print(G)
+# F=("girl", "fan", 44, 5j, True, "Men", "Women")
+# E=(False, 44j)
+# F.update(E)
+# print(F)      No merging in tuple
+
+D={"girl", "gen", 44, 5j, True, "Men", "Women"}
+B=(33, False)
+D.update(B)
+print(D)
+# B.update(D)
+# print(B)   # no merging in tuple-only possible in set 
+C={"bat", 33, True, 4j, "ball"}
+S=("bat", False)
+C.update(S)
+print(C)    # the item is not repeated in the set 
+C.remove("bat")
+print(C)
+
+# Remove vs Discard- Whether item is there or not discard will never throw an errow
+# C.remove("rat")
+C.discard("rat")
+C.discard(4j)
+print(C)
+C.pop()
+print(C)      #random deletion 
