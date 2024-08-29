@@ -126,7 +126,7 @@ print(C)    # the item is not repeated in the set
 C.remove("bat")
 print(C)
 
-# Remove vs Discard- Whether item is there or not discard will never throw an errow
+# Remove vs Discard- Whether item is there or not discard will never throw an error
 # C.remove("rat")
 C.discard("rat")
 C.discard(4j)
