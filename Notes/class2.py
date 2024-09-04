@@ -68,5 +68,65 @@ A=input("How is she")
 if A==("good"):
     print("happy fo her")    
 else:
-    print("will ask her")    # this code will run via running python file not the code. Run code and runnning python differs.
+    print("will ask her")    # this code will run via running python file not the code. Run code and runnning python compiling differs.
+
+# while-a while loop in python is a control statement that allows code to be executed repeatedly based on the given condition. 
+#      -The loop continues executing until or unless condition gets false. 
+r=7
+sum=0
+i=1
+while i<=r:
+    sum+=i
+    i=i+1 
+print(sum)    
+
+i=1
+while i<6:
+    print(i)      
+    i=i+1            
+    i=i+3        # final snippet will execute 
+
+i=1
+while i<5:
+    print(i)
+    if i==2:
+        break
+    i=i+1        
+
+# i=1
+# while i<9:
+#     print(i)
+#     if i==5:
+#         continue               # skips everything after 5 and an infinite loop of 5 will be there.
+#     i=i+1    
+# The error in the code is due to the continue statement inside the if block. When i is equal to 5, 
+# the continue statement skips the rest of the code within the loop, including the increment of i. As a result,
+# i remains 5, causing an infinite loop where i is always 5 and never increments, leading to a never-ending loop.
+
+i=1
+while i<10:
+    i=i+1
+    if i==5:
+        continue
+    print(i)     # 1 will not be print as 1 is 1 that is 2, printing will start from 2
+
+i=0
+while i<11:
+    i=i+1
+    if i==4:
+        continue
+    if i==8:
+        continue
+    print(i)     # we can't do if i==4 and i==8 as a single statement because that means i has 2 values at the same time.
+
+i=15
+j=10
+sum=i+j
+while sum<50:
+    i+=1
+    j+=1
+    if i==20:
+        break
+print(sum)    
+
     
